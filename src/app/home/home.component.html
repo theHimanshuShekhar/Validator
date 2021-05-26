@@ -1,7 +1,6 @@
-<div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
-
-  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
-</div>
+<div class="text-5xl font-extrabold">Validator</div>
+<ng-container *ngFor="let data of deviceData">
+  <div class="p-2">{{data.name}}
+    <span class="my-2 font-bold text-xl">{{data.value}}</span>
+  </div>
+</ng-container>
